@@ -1,0 +1,32 @@
+#cambridge-picture{
+  width: 90px;
+  height: 25px;
+}
+
+.full-word{
+  font-family: 'Dancing Script', cursive;
+}
+
+#list-words-row{
+  margin-left: 25px;
+  margin-right: 1px;
+}
+
+#oxford-picture{
+  width: 90px;
+  height: 25px;
+}
+
+#forvo-picture{
+  width: 45px;
+  height: 25px;
+}
+
+.full-word{
+  font-size: 1rem;
+
+}
+
+.card-header{
+
+}

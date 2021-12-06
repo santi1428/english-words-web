@@ -1,0 +1,8 @@
+#add-new-word:focus {
+  border-color: #343A40;
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}

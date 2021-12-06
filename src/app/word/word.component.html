@@ -1,0 +1,32 @@
+<div class="card animate__animated animate__fadeIn" [ngClass]="{'animate__fadeOut': deletedWord}">
+  <div class="card-header text-dark text-center py-1 px-0"
+       [class]="{'bg-primary': word.type === 'noun','bg-secondary': word.type === '', 'bg-success': word.type === 'verb', 'bg-warning': word.type === 'adverb'}">
+    <p class="full-word mb-0 text-light">{{word.word}}</p>
+  </div>
+  <div class="card-body text-center px-2 py-2">
+    <p>
+      <a href="{{word.cambridgeDefinitionLink}}" target="_blank" rel="noopener noreferrer" title="Definition of this word in cambridge dictionary">
+        <img src="https://slovoed.com/images/slovoed/news/400/new-logo.png?1510055386" id="cambridge-picture" alt="Couldn't load this image">
+      </a>
+    </p>
+    <p>
+      <a href="{{word.oxfordDefinitionLink}}" target="_blank" rel="noopener noreferrer" title="Definition of this word in oxford dictionary">
+        <img src="https://img2.freepng.es/20180627/zsz/kisspng-oxford-english-dictionary-oxforddictionaries-com-u-dictionary-5b3343fe38e2d7.996267661530086398233.jpg" id="oxford-picture" alt="Couldn't load this image">
+      </a>
+    </p>
+    <p>
+      <a href="{{word.forvoPronunciationLink}}" target="_blank" rel="noopener noreferrer" title="Pronunciation of this word">
+        <img src="https://static00.forvo.com/_presentation/img/forvo_og.png" id="forvo-picture" alt="Couldn't load this image">
+      </a>
+    </p>
+    <div class="row justify-content-center">
+      <div class="col-auto px-0 mr-1">
+        <button class="btn btn-sm btn-outline-danger" title="Delete" (click)="deleteWord()" [hidden]="deletedWord"><i class="fas fa-trash-alt"></i></button>
+      </div>
+      <div class="col-auto px-0">
+        <button class="btn btn-sm btn-outline-success" title="Archive" [hidden]="deletedWord"><i class="fas fa-archive"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+

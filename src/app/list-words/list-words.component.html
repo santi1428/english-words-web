@@ -1,0 +1,17 @@
+<div class="row text-light" id="list-words-row">
+  <div class="col">
+    <div class="row mb-2 mt-0">
+      <div class="col-auto">
+        <h6>Number of words: <span class="badge badge-light">{{wordsCount}}</span></h6>
+      </div>
+      <div class="col">
+        <app-filter-words></app-filter-words>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let word of words; let index = index;" class="col-auto mb-4">
+        <app-word [word]="word" [index]="index"></app-word>
+      </div>
+    </div>
+  </div>
+</div>

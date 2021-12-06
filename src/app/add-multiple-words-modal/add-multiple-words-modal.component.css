@@ -1,0 +1,12 @@
+#add-multiple-words{
+  color: #fff;
+  text-underline: white;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+#add-multiple-words:hover{
+  cursor: pointer;
+}
+
+

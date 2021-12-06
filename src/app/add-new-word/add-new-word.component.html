@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col pr-0">
+    <input #newWordField type="text" class="form-control text-center font-weight-bold" id="add-new-word" placeholder="Type the new word"
+     [formControl]="wordControl" (keyup.enter)="addWord()" autofocus />
+  </div>
+  <div class="col-auto pl-1">
+    <button class="btn btn-dark" title="Add word" (click)="addWord()">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+</div>
+
